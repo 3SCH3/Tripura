@@ -1,6 +1,12 @@
+
+
+
+
 # Tripura - AI-Powered Vacation Planner
 
-A modern web application for planning vacations with AI-powered route planning, stop recommendations, and personalized travel advice.
+A modern web application for planning vacations with AI-powered route planning, stop 
+
+Bessere Version recommendations, and personalized travel advice.
 
 ## Features
 
@@ -25,31 +31,34 @@ A modern web application for planning vacations with AI-powered route planning, 
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 - Google Maps API key
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd tripura
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp .env.example .env.local
 ```
 
 4. Add your keys to `.env.local` (see Environment Variables below).
-
 5. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -59,7 +68,9 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 ## Deployment Options
 
 ### Progressive Web App (PWA)
+
 The app is configured as a PWA and can be installed on:
+
 - Mobile devices (iOS/Android)
 - Desktop browsers
 - App stores (Google Play Store, Microsoft Store)
@@ -67,15 +78,18 @@ The app is configured as a PWA and can be installed on:
 ### App Store Deployment
 
 #### Google Play Store
+
 1. Build the PWA: `npm run build`
 2. Use tools like PWABuilder or Capacitor to create Android APK
 3. Submit to Google Play Store
 
 #### Microsoft Store
+
 1. Use PWABuilder to create Windows app package
 2. Submit to Microsoft Store
 
 #### Apple App Store
+
 1. Use Capacitor to create iOS app
 2. Submit to Apple App Store
 
@@ -89,14 +103,14 @@ cp .env.example .env.local
 
 Required variables:
 
-| Variable | Description |
-|----------|-------------|
-| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | Google Maps API key for map components |
-| `NEXT_PUBLIC_APP_URL` | App URL (e.g. `http://localhost:3000`) |
-| `AUTH_JWT_SECRET` | Secret for session cookies (generate a long random string) |
-| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe publishable key (test mode) |
-| `STRIPE_SECRET_KEY` | Stripe secret key (server only) |
-| `STRIPE_WEBHOOK_SECRET` | Stripe webhook signing secret |
+| Variable                               | Description                                                |
+| -------------------------------------- | ---------------------------------------------------------- |
+| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`    | Google Maps API key for map components                     |
+| `NEXT_PUBLIC_APP_URL`                | App URL (e.g. `http://localhost:3000`)                   |
+| `AUTH_JWT_SECRET`                    | Secret for session cookies (generate a long random string) |
+| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe publishable key (test mode)                         |
+| `STRIPE_SECRET_KEY`                  | Stripe secret key (server only)                            |
+| `STRIPE_WEBHOOK_SECRET`              | Stripe webhook signing secret                              |
 
 ### Auth
 
